@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #E1D4C9;
+    color: #3d3d3d;
+    position: relative;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E1D4C9;
+}
+
+.nav-link {
+    color: #403F3D;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-center-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    transform: translateX(-280px);
+    display: inline-block;
+}
+
+/* Text Styles */
+p {
+    line-height: 10px;
+}
+
+.text-inside {
+    font-style: italic;
+    color: #B0907A;
+}
+
+/* Hero Section */
+.hero-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-heading-large {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    color: #E1D4C9;
+    font-size: 72px;
+    text-align: left;
+}
+
+.hero-subtext {
+    position: absolute;
+    top: 54%;
+    left: 20%;
+    color: #E1D4C9;
+    font-size: 16px;
+    text-align: left;
+}
+
+.hero-image {
+    width: 1360px;
+    height: 644px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+/* Button Styles */
+.hero-button {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    background-color: #E1D4C9;
+    color: #403F3D;
+    font-size: 16px;
+    width: 200px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-button:hover {
+    background-image: url('coffee-cup.png');
+    background-position: calc(100% - 55px) center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+/* Section Text Styles */
+.section-heading {
+    position: absolute;
+    text-align: left;
+    top: 110%;
+    left: 15%;
+    font-size: 60px;
+    color: #403F3D;
+}
+
+.section-subtext {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 245%;
+    left: 15%;
+    color: #403F3D;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Images */
+.secondary-image {
+    position: absolute;
+    top: 150%;
+    width: 660px;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    margin-left: 15%;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+/* Download Button Styles */
+.download-btn {
+    display: inline-block;
+    padding: 0.3125rem 0.875rem;
+    padding-left: 2.8125rem;
+    border-radius: 20px;
+    background-position: center left 0.75rem;
+    background-color: #E1D4C9;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    border: 2px solid #403F3D;
+}
+
+.download-btn .button-title {
+    display: block;
+    color: #403F3D;
+    font-size: 16px;
+}
+
+.download-btn .button-subtitle {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #403F3D;
+    font-size: 10px;
+}
+
+.download-btn:hover {
+    background-color: #665F55;
+    text-decoration: none;
+}
+
+.download-btn:hover .button-title,
+.download-btn:hover .button-subtitle {
+    color: #E1D4C9;
+}
+
+.apple-download {
+    position: absolute;
+    top: 255%;
+    left: 15%;
+    background-image: url("apple-store.png");
+}
+
+.play-download {
+    position: absolute;
+    top: 255%;
+    left: 24%;
+    background-image: url("play-store.png");
+}
+
+.download-header {
+    position: absolute;
+    top: 230%;
+    left: 15%;
+    font-size: 60px;
+    color: #403F3D;
+}
+
+/* Contact Section */
+.contact-section {
+    width: 1360px;
+    height: 342px;
+    background-color: #665F55;
+    border-radius: 40px;
+    position: absolute;
+    margin: 50px auto;
+    top: 260%;
+    left: 15%;
+}
+
+.contact-header {
+    position: absolute;
+    font-size: 24px;
+    top: 27%;
+    left: 10%;
+    color: #E1D4C9;
+}
+
+.contact-details {
+    position: relative;
+    font-size: 16px;
+    top: 42%;
+    left: 10%;
+    color: #E1D4C9;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div></div>
+    <div class="nav-center-links">
+        <a href="#" class="nav-link">Favorite Coffee</a>
+        <a href="#" class="nav-link">About</a>
+    </div>
+    <div class="nav-right">
+        <a href="#" class="nav-link">Menu <img src="coffee-cup.png"></a>
+    </div>
+</div>
+
+<div class="hero-container">
+    <img src="Coffee_pouring.jpg" alt="Coffee" class="hero-image">
+    <div class="hero-heading-large">
+        <p><span class="text-inside">Enjoy</span> premium</p>
+        <p>coffee at our</p>
+        <p>charming cafe</p>
+    </div>
+    <div class="hero-subtext">
+        <p>With its inviting atmosphere and delicious coffee options, the Coffee</p>
+        <p>House Resource is a popular destination for coffee lovers and those</p>
+        <p>seeking a warm and inviting space to enjoy their favorite beverage.</p>
+    </div>
+    <button class="hero-button">Menu</button>
+    <div class="section-heading">
+        <p>Resource is <span class="text-inside">the perfect and cozy place where </span></p>
+        <p>you can enjoy a variety of hot beverages, relax,</p>
+        <p>catch up with friends, or get some work done.</p>
+    </div>
+    <img src="Drinking_coffee.jpg" alt="Coffee" class="secondary-image">
+    <p class="download-header"><span class="text-inside">Download </span>our apps to start ordering</p>
+    <p class="section-subtext">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are.</p>
+    <a href="#" class="download-btn apple-download" role="button">
+        <span class="button-subtitle">Available on the</span>
+        <span class="button-title">App Store</span>
+    </a>
+    <a href="#" class="download-btn play-download" role="button">
+        <span class="button-subtitle">Available on the</span>
+        <span class="button-title">Play Store</span>
+    </a>
+</div>
+
+<div class="contact-section">
+    <p class="contact-header">Contact Us</p>
+    <div class="contact-details">
+        <p><img src="phone.png"> +1 (603) 555-0123</p>
+        <p><img src="clock.png"> Mon-Sat: 9:00 AM – 23:00 PM</p>
+    </div>
+</div>
+
+</body>
+</html>
